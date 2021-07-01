@@ -1,0 +1,29 @@
+using System;
+ 
+public class Program
+{
+    static void Main(string[] args)
+    {
+    
+        int[] intArray = new int[5] {5, 10, 6, 7, 11};      
+    			
+       Console.Write("A continuación se creara un vector con distintos números al azar");
+    	Console.Write("\n");
+    	 Console.Write("Este nos ordenará de forma ascendente y descendente");
+    	  Console.Write("\n");
+    		
+        Array.Sort(intArray);
+        foreach (int i in intArray) {
+            Console.Write("El vector ordenado de manera ascendente es:" + i);
+        }
+        Console.Write("\n");
+ 
+        // ordenamos el array descendente
+        Array.Reverse(intArray);
+        foreach (int i in intArray) {
+            Console.Write("El vector ordenado de manera descendente es:" + i);
+        }
+        Console.Write("\n");
+    }
+}
+
